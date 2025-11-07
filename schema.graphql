@@ -1,0 +1,15 @@
+type SynthetixDeposit_Approval {
+  id: ID!
+  owner: String!
+  spender: String!
+  value: BigInt!
+  timestamp: BigInt!
+}
+
+type SynthetixDeposit_Transfer {
+  id: ID!
+  from: String!
+  to: String!
+  value: BigInt!
+  timestamp: BigInt!
+}

@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: envio-indexer
+networks:
+- id: 1
+  start_block: 0
+  contracts:
+  - name: SynthetixDeposit
+    address:
+    - 0x5572101658d90b95f3619a909860C59C9a019dCb
+    handler: src/EventHandlers.ts
+    events:
+    - event: Approval(address indexed owner, address indexed spender, uint256 value)
+    - event: Transfer(address indexed from, address indexed to, uint256 value)
+unordered_multichain_mode: true
+preload_handlers: true
