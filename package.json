@@ -21,7 +21,7 @@
     "mocha": "10.2.0"
   },
   "dependencies": {
-    "envio": "2.32.2"
+    "envio": "3.0.0-alpha-main-clickhouse-sink"
   },
   "optionalDependencies": {
     "generated": "./generated"
